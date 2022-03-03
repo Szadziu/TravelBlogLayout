@@ -1,0 +1,15 @@
+@mixin category($color) {
+  background-color: $color;
+}
+@mixin darkBgImage($img) {
+  background: linear-gradient(rgba(22, 22, 22, 0.7)),
+    url($img) no-repeat center / cover;
+}
+@mixin resetProps {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+}
