@@ -2,7 +2,7 @@
   background-color: $color;
 }
 @mixin darkBgImage($img) {
-  background: linear-gradient(rgba(22, 22, 22, 0.7)),
+  background: linear-gradient(rgba(22, 22, 22, 0.65)),
     url($img) no-repeat center / cover;
 }
 @mixin resetProps {
@@ -12,4 +12,9 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
   }
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
